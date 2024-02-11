@@ -1,0 +1,89 @@
+main {
+    justify-content: space-between;
+    width: 90%;
+    margin: 0 5%;
+    margin-top: 15%;
+    display: flex;
+    align-items: center;
+    text-transform: uppercase;
+
+    .main_text {
+        width: 50%;
+        letter-spacing: 2px;
+        font-size: 150px;
+    }
+
+    .main_nav {
+        width: 50%;
+        height: 350px;
+        display: flex;
+        justify-content: space-between;
+
+        .main_nav__content {
+            border-radius: 25px;
+            font-size: 30px;
+            letter-spacing: 2px;
+        }
+    }
+
+    .main_nav__left {
+        width: 50%;
+        text-align: center;
+        line-height: 150px;
+
+        div {
+            height: 50%;
+            background-color: #333;
+
+            &:first-child {
+                background-image: url('../img/layout.jpg');
+                background-position: bottom center;
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+
+            &:last-child {
+                margin-top: 20px;
+                background-image: url('../img/fort.jpg');
+                background-position: bottom center;
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+        }
+    }
+
+    .main_nav__right {
+        margin-left: 20px;
+        width: 50%;
+        text-align: center;
+
+        div {
+            line-height: 90px;
+            height: 30%;
+            background-color: #333;
+
+            &:nth-child(1) {
+                background-image: url('../img/ninja.jpg');
+                background-position: top center;
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+
+            &:nth-child(2) {
+                background-image: url('../img/titan.jpg');
+                background-position: center center;
+                background-repeat: no-repeat;
+                background-size: cover;
+                margin-top: 25px;
+            }
+
+            &:nth-child(3) {
+                background-image: url('../img/stars.jpg');
+                background-position: bottom center;
+                background-repeat: no-repeat;
+                background-size: cover;
+                margin-top: 25px;
+            }
+        }
+    }
+}
